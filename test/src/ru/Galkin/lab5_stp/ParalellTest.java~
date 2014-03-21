@@ -1,0 +1,21 @@
+package ru.shmakova.lab4_stp;
+import java.io.*;
+import java.util.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+    public class ParallelTest {
+	@Test
+         public void testType(){
+			System.out.println("Тестируем класс Паралеллограмм");
+			Paralell t = new Paralell(1,1,1,1, "Paralell");
+			assertEquals("Paralell",t.name);
+		} 
+	
+	@Test
+	 public void testMethod(){
+			System.out.println("Тестируем метод perimetr()");
+			Paralell t = new Paralell(1,6,2,"Paralell");
+			assertEquals(16,t.perimetr(),0.01);			
+		}
+   }

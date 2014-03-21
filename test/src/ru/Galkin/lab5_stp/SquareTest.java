@@ -1,0 +1,21 @@
+package ru.Galkin.lab5_stp;
+import java.io.*;
+import java.util.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+
+    public class SquareTest {
+	@Test
+         public void testType(){
+			System.out.println("Тестируем класс Квадрат");
+			Square t = new Square(1,1, "Square");
+			assertEquals("Square",t.name);
+		} 
+         @Test
+	 public void testMethod(){
+			System.out.println("Тестируем метод getRadius()");
+			Square t = new Square(3,2, "Square");
+			assertEquals(1.41,t.getRadius(),0.01);			
+		}
+    }
